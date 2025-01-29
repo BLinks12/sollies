@@ -7,7 +7,9 @@
     <!-- Google Fonts for Pixelated Font -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <!-- Font Awesome for Social Media Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXRNwTVsNUGtcf8O2iFukpZukqLq1iTzq7JmE1Bt7tjP/qZsVV6yJXjHcE4CwE96BtjhxA4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+          integrity="sha512-Fo3rlrZj/k7ujTTXRNwTVsNUGtcf8O2iFukpZukqLq1iTzq7JmE1Bt7tjP/qZsVV6yJXjHcE4CwE96BtjhxA4g==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* Reset default browser styles */
         * {
@@ -405,7 +407,7 @@
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
         }
 
-        /* Call-to-Action Banner */
+        /* $SOLLIES Token Banner (formerly CTA banner) */
         .cta-banner {
             width: 100%;
             padding: 40px 20px;
@@ -596,7 +598,8 @@
             <a href="#features">Features</a>
             <a href="#testimonials">Testimonials</a>
             <a href="#gallery">Gallery</a>
-            <a href="#cta">Join Us</a>
+            <!-- Renamed from "Join Us" to "$SOLLIES" and updated anchor -->
+            <a href="#sollies">$SOLLIES</a>
         </nav>
     </header>
 
@@ -693,11 +696,17 @@
         </div>
     </section>
 
-    <!-- Call-to-Action Banner -->
-    <section class="cta-banner" id="cta">
-        <h2>Ready to Begin Your Adventure?</h2>
-        <p>Join the SOLLIES community today and be among the first to experience the game!</p>
-        <button class="cta-button" id="ctaWaitlistBtn">Join the Waitlist</button>
+    <!-- $SOLLIES Token Section (formerly CTA) -->
+    <section class="cta-banner" id="sollies">
+        <h2>$SOLLIES Token</h2>
+        <p>
+            The $SOLLIES token is at the heart of our ecosystem. 
+            Use it to hatch new creatures from eggs, unlock rare evolutions, 
+            and facilitate safe peer-to-peer exchanges of your digital monsters. 
+            Power your journey through the SOLLIES world with $SOLLIES!
+        </p>
+        <!-- Optional: Button to learn more or purchase tokens -->
+        <button class="cta-button" id="solliesTokenBtn">Learn More</button>
     </section>
 
     <!-- Footer -->
@@ -748,7 +757,7 @@
         }, 1000);
 
         // Waitlist Modal Functionality
-        const waitlistBtns = document.querySelectorAll('#waitlistBtn, #heroWaitlistBtn, #ctaWaitlistBtn');
+        const waitlistBtns = document.querySelectorAll('#waitlistBtn, #heroWaitlistBtn');
         const modal = document.getElementById('waitlistModal');
         const closeModal = document.getElementById('closeModal');
         const submitEmail = document.getElementById('submitEmail');
